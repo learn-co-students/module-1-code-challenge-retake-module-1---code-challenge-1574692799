@@ -4,29 +4,24 @@ def reload
   load 'config/environment.rb'
 end
 
-buzz = Astronaut.new("Buzz Lightyear", 45, "Ranger")
-gennady = Astronaut.new("Gennady Padalka", 61, "Pilot")
-peggy = Astronaut.new("Peggy Whitson", 59, "Biochemist")
-yuri = Astronaut.new("Yuri Gagarin", 34, "Cosmonaut")
-alyssa = Astronaut.new("Alyssa Carson", 18, "Astronaut in Training")
+astronaut1 = Astronaut.new("Name 1", 45, "Ranger")
+astronaut2 = Astronaut.new("Name 2", 61, "Pilot")
+astronaut3 = Astronaut.new("Name 3", 59, "Biochemist")
+astronaut4 = Astronaut.new("Name 4", 34, "Cosmonaut")
+astronaut5 = Astronaut.new("Name 5", 18, "Astronaut in Training")
 
-columbia = Shuttle.new("OV-102", 4)
-discovery = Shuttle.new("OV-103", 5)
-endeavor = Shuttle.new("OV-105", 8)
-dragon = Shuttle.new("Space X", 7)
+shuttle1 = Shuttle.new("Model1", 4)
+shuttle2 = Shuttle.new("Model2", 5)
+shuttle3 = Shuttle.new("Model3", 8)
+shuttle4 = Shuttle.new("Model4", 7)
 
-m1 = Mission.new(1981, peggy, columbia)
-m2 = Mission.new(1981, yuri, columbia)
-m3 = Mission.new(1981, gennady, columbia)
-m4 = Mission.new(2023, alyssa, dragon)
-m5 = Mission.new(1984, buzz, discovery)
-m6 = Mission.new(1984, yuri, discovery)
-m7 = Mission.new(1984, gennady, discovery)
-m8 = Mission.new(1992, peggy, endeavor)
-m9 = Mission.new(1992, buzz, endeavor)
-m10 = Mission.new(1992, yuri, endeavor)
-m11 = Mission.new(2023, buzz, dragon)
-m12 = Mission.new(2023, yuri, dragon)
+m1 = Mission.new(1981, astronaut5, shuttle3)
+m2 = Mission.new(1981, astronaut3, shuttle4)
+m3 = Mission.new(1981, astronaut4, shuttle2)
+m4 = Mission.new(2023, astronaut2, shuttle1)
+m5 = Mission.new(1984, astronaut1, shuttle4)
+m6 = Mission.new(1984, astronaut2, shuttle1)
+
 
 
 binding.pry

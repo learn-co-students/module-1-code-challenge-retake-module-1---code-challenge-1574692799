@@ -1,6 +1,7 @@
 class Mission
+  attr_accessor :launch_date, :astronaut, :shuttle
+  attr_reader
 
-  attr_reader :launch_date, :shuttle, :astronaut
   @@all = []
 
   def initialize(launch_date, astronaut, shuttle)
@@ -8,11 +9,14 @@ class Mission
     @astronaut = astronaut
     @shuttle = shuttle
 
+
     @@all << self
   end
 
   def self.all
     @@all
   end
+
+
 
 end
