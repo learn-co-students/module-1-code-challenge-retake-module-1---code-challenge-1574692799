@@ -17,12 +17,18 @@ class Astronaut
     @@all
   end
 
+
+  
+
+  
+
+
   def self.most_missions
     Astronaut.all.max_by do |astronaut|
       astronaut.missions.count
     end
   end
-  end
+  
 
   def missions
     Mission.all.select do |mission|
@@ -39,20 +45,8 @@ class Astronaut
   def join_shuttle(launch_date, shuttle)
     if shuttle.capacity > shuttle.missions.length
       Mission.new(launch_date, self, shuttle)
-    else
+      else
     puts "This shuttle is at capacity!"
+      end
     end
 end
-
-
-
-
-
-
-
-
-
-
-  
-
-

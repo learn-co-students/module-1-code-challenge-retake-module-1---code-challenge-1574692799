@@ -17,6 +17,8 @@ class Mission
     @@all
   end
 
+  
+
 
 
 end

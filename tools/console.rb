@@ -17,7 +17,7 @@ shuttle4 = Shuttle.new("Model4", 7)
 
 m1 = Mission.new(1981, astronaut5, shuttle3)
 m2 = Mission.new(1981, astronaut3, shuttle4)
-m3 = Mission.new(1981, astronaut4, shuttle2)
+m3 = Mission.new(1981, astronaut4, shuttle1)
 m4 = Mission.new(2023, astronaut2, shuttle1)
 m5 = Mission.new(1984, astronaut1, shuttle4)
 m6 = Mission.new(1984, astronaut2, shuttle1)

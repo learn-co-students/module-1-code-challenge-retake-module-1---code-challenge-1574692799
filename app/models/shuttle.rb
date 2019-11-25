@@ -33,6 +33,34 @@ class Shuttle
     end
   end
 
+  def average_age
+    astronauts = self.missions.map do |mission|
+       mission.astronaut
+    end
+    ages = current_astronauts.map do |astronaut| 
+      astronaut.age
+    end
+    ages.sum.to_f / ages.length
+  end
+
+  def astronauts_specialties
+    current_astronauts.map do |astro| astro.specialty end
+  end
+
+  def self.smallest_mission
+    self.all.min_by do |shuttle|
+      shuttle.capacity
+    end
+  end
+
+  def self.most_common_model
+    counts = Hash.new(0)
+    
+    self.all.max_by { |shuttle| shuttle.model}
+  end
+      
+
+
 
     
 
